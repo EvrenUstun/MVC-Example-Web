@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Site</title>
+</head>
+<body>
+    <h1>Blog Entries</h1>
+    <ul>
+        <li th:each="entry : ${entries}">
+            <p>Title: <span th:text="${entry.title}"></span></p>
+            <p>Content: <span th:text="${entry.content}"></span></p>
+            <p>Author: <span th:text="${entry.author}"></span></p>
+        </li>
+    </ul>
+    <a href="/add">Add new entry</a>
+</body>
+</html>

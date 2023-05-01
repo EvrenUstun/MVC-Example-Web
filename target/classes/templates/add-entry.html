@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Blog Entry</title>
+</head>
+<body>
+    <h1>Add Blog Entry</h1>
+    <form method="post" action="/add">
+        <div style="margin: 25px;">
+            <label>Title:</label>
+            <input type="text" name="title">
+        </div>
+        
+        <div style="margin: 25px;">
+            <label>Author:</label>
+            <input type="text" name="author">
+        </div>
+        
+        <div style="margin: 25px;">
+            <label>Content:</label>
+            <textarea name="content"></textarea>
+        </div>
+        
+        <div style="margin: 25px;">
+            <button type="submit">Save</button>
+        </div>
+    </form>
+</body>
+</html>
